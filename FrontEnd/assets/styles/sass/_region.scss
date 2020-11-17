@@ -1,0 +1,122 @@
+.region {
+	padding-top: 80px;
+	& > h1 {
+		margin-top: 0;
+	}
+	&-list {
+		& .accordion {
+			& .card {
+				margin: 0;
+				margin-bottom: 10px;
+				border-left: 4px solid #6a11cb;
+				border-right: 4px solid #6a11cb;
+				box-shadow: -5px 5px 16px -4px #000;
+				transition: all 0.2s ease-in-out;
+				&:hover {
+					transform: scale(1.01);
+					&:hover {
+						& .buttons {
+							display: flex;
+						}
+					}
+				}
+				&:first-child {
+					margin-top: 0;
+				}
+				&-header {
+					margin-bottom: 0;
+					& h2 {
+						display: flex;
+						align-items: center;
+					}
+					a {
+						display: flex;
+						justify-content: space-between;
+						background-color: transparent;
+						align-items: center;
+						text-decoration: none;
+						min-height: 52px;
+						& .buttons {
+							display: none;
+							flex: 1;
+							justify-content: flex-end;
+						}
+
+						& p {
+							font-weight: bold;
+							color: #0683f9;
+							&:last-child {
+								color: #000;
+								font-weight: 400;
+							}
+						}
+
+						& img {
+							transform: rotate(180deg);
+							transition: all 0.3s ease-in-out;
+						}
+						&.collapsed {
+							& img {
+								transform: rotate(0deg);
+							}
+						}
+					}
+				}
+			}
+			&-deep {
+				display: flex;
+				justify-content: space-between;
+				padding: 10px 40px;
+				& p {
+					font-weight: bold;
+				}
+			}
+		}
+	}
+	&-buttons {
+		margin-bottom: 20px;
+		display: flex;
+		justify-content: flex-end;
+		a {
+			color: #000;
+			font-weight: bold;
+
+			& div {
+				width: 40px;
+				display: inline-block;
+				height: 40px;
+				padding: 5px;
+				background-color: #0683f9;
+				border-radius: 50%;
+				& img {
+					width: 100%;
+				}
+			}
+			&:hover {
+				text-decoration: none;
+				color: #0683f9;
+			}
+		}
+		&-search {
+			border: 2px solid #0683f9;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 5px 10px;
+			border-radius: 50px;
+			&:hover {
+				border: 2px solid #6a11cb;
+			}
+			& &-image {
+				background-color: #fff;
+				width: initial;
+				height: initial;
+				padding: 0;
+				margin-right: 5px;
+				& img {
+					width: 24px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+#modal-newUser {
+	text-align: center;
+	& .footer-form {
+		border-top: 1px solid #dee2e6;
+		padding-top: 20px;
+		& .btn {
+			display: block;
+			width: 100%;
+			padding: 10px;
+		}
+	}
+	& label {
+		font-weight: 600;
+	}
+}

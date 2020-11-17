@@ -1,0 +1,24 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+p {
+	margin-bottom: 0;
+}
+
+.bg-primary {
+	background-color: #6a11cb !important;
+}
+.btn-primary {
+	background-color: #6a11cb !important;
+	border: none;
+}
+.btn-dark {
+	background-color: #000 !important;
+}
+.btn-danger {
+	background-color: #f00 !important;
+}
+.form-control:focus {
+	box-shadow: none;
+}

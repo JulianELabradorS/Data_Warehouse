@@ -1,0 +1,21 @@
+.navbar {
+	background-image: linear-gradient(left, #6a11cb, #2575fc);
+	& .container {
+		display: flex;
+		justify-content: space-between;
+	}
+	&-collapse {
+		flex-grow: 0;
+	}
+	&-brand {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		& img {
+			width: 40px;
+		}
+	}
+	& a {
+		font-weight: bold;
+	}
+}

@@ -1,0 +1,70 @@
+#modal-newContact {
+	& .modal-dialog {
+		max-width: 650px;
+		& .modal-content {
+			border-radius: 12px;
+			overflow: hidden;
+		}
+		& .modal-body {
+			padding: 30px 40px;
+		}
+		& .footer-form {
+			border-top: 1px solid #dee2e6;
+			padding-top: 20px;
+			& .btn {
+				display: block;
+				width: 100%;
+				padding: 10px;
+			}
+		}
+	}
+	&-form {
+		& .form-row {
+			& > p {
+				font-size: 24px;
+				font-weight: bold;
+				margin-bottom: 20px;
+				width: 100%;
+			}
+		}
+		& .form-group {
+			& label {
+				font-weight: 600;
+			}
+			& .form-photo {
+				position: relative;
+				width: fit-content;
+				margin: 0 auto;
+				&-image {
+					width: 200px;
+					border-radius: 50%;
+					border: 3px solid #007bff;
+					overflow: hidden;
+					& img {
+						width: 100%;
+					}
+				}
+				& input {
+					display: none;
+				}
+				& label {
+					background-color: #007bff;
+					position: absolute;
+					width: 35px;
+					height: 35px;
+					padding: 5px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					border-radius: 50%;
+					margin-bottom: 0;
+					right: 16px;
+					bottom: 10px;
+					& img {
+						width: 16px;
+					}
+				}
+			}
+		}
+	}
+}
